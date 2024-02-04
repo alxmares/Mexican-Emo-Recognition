@@ -11,7 +11,7 @@ The system follows a comprehensive pipeline to capture the emotional tone from b
 ![](assets/window.png)
 
 1. **Audio Recording**: Capture audio inputs for processing.
-2. **Speech to Text**: Convert the spoken words into written text in Spanish using advanced models.
+2. **Speech to Text**: Convert the spoken words into written text in Spanish using Whisper.
 3. **Keyword Extraction**: Identify and extract key words from the text that are critical for understanding the emotional context.
 4. **Audio Segments Extraction**: Retrieve audio segments corresponding to the important words identified in the text.
 5. **Speech Emotion Recognition**: Analyze the emotional content of the extracted audio segments using a custom CNN model.
@@ -27,7 +27,7 @@ This project leverages cutting-edge technologies and models to ensure accurate e
 
 ## 2D CNN for SER
 
-The core of our emotion recognition system is a 2D Convolutional Neural Network (CNN) designed to analyze the emotional content in audio segments. This section delves into the workings of our CNN, detailing the preparation of input data and the structure of the network, followed by the presentation of performance metrics.
+The core of my emotion recognition system is a 2D Convolutional Neural Network (CNN) designed to analyze the emotional content in audio segments. This section delves into the workings of our CNN, detailing the preparation of input data and the structure of the network, followed by the presentation of performance metrics.
 
 **Data Preparation**
 Before feeding the audio data into the CNN, we undergo a meticulous preparation process to ensure the data is conducive to accurate emotion recognition:
@@ -43,10 +43,13 @@ Before feeding the audio data into the CNN, we undergo a meticulous preparation 
 After these preprocessing steps, we convert the audio clips into Mel Spectrograms.
 
 **Performance**
+
 Test accuracy: 88.44
+
 F1 Score: 0.8842
 
 Confusion matrix:
+
 ![](assets/confusion_matrix.png)
 
 
@@ -64,16 +67,14 @@ To use the system, follow these steps:
 
 ## Contributing
 
-We welcome contributions from the community! If you'd like to contribute, please fork the repository and create a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
+I welcome contributions from the community! If you'd like to contribute, please fork the repository and create a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-
-We like to thank to Duville, Alonso-Valerdi and Ibarra-zarate for their dedication of the collection of the Mexican Emotional Speech Database Duville, M.M.; Alonso-Valerdi, L.M.; Ibarra-Zarate, D.I. Mexican Emotional Speech Database Based on Semantic, Frequency, Familiarity, Concreteness, and Cultural Shaping of Affective Prosody. Data 2021, 6, 130.
 
 ## Acknowledgments
 
 - Whisper for speech-to-text conversion
 - Pysentimiento for text emotion recognition
-- The creators of the Mexican Spanish Emotion Speech Database (MESD) for providing a rich dataset for model training
+- I like to thank Duville, Alonso-Valerdi and Ibarra-zarate for their dedication of the collection of the Mexican Emotional Speech Database *Duville, M.M.; Alonso-Valerdi, L.M.; Ibarra-Zarate, D.I. Mexican Emotional Speech Database Based on Semantic, Frequency, Familiarity, Concreteness, and Cultural Shaping of Affective Prosody. Data 2021, 6, 130.*
 
 Thank you for exploring our Speech and Text Emotion Recognition in Mexican Spanish project. We hope it serves as a valuable tool for your research or application in understanding and analyzing emotions in Mexican Spanish.
